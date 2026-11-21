@@ -1,0 +1,303 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+    background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo */
+.navbar__logo img {
+    width: 91px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Navbar Links */
+.navbar__link {
+    text-decoration: none;
+    color: #2d2f31;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+    color: #5624d0;
+}
+
+/* Search Bar */
+.navbar__search {
+    flex: 1;
+    height: 48px;
+    max-width: 450px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 18px;
+
+    border: 1px solid #2d2f31;
+    border-radius: 30px;
+
+    background-color: #f7f9fa;
+}
+
+.navbar__search i {
+    font-size: 16px;
+    color: #2d2f31;
+}
+
+.navbar__search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-family: inherit;
+    font-size: 14px;
+}
+
+/* Business and Teaching */
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Navbar Actions */
+.navbar__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Cart */
+.navbar__cart {
+    color: #2d2f31;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.navbar__cart:hover {
+    color: #5624d0;
+}
+
+/* Buttons */
+button {
+    height: 42px;
+    padding: 0 18px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Login */
+.btn--login {
+    background-color: #ffffff;
+    color: #2d2f31;
+    /* border: 1px solid #2d2f31; */
+}
+
+.btn--login:hover {
+    background-color: #f7f9fa;
+}
+
+/* Signup */
+.btn--signup {
+    background-color: #2d2f31;
+    color: #ffffff;
+    /* border: 1px solid #2d2f31; */
+}
+
+.btn--signup:hover {
+    background-color: #444444;
+}
+
+/* Language */
+.btn--language {
+    width: 42px;
+    padding: 0;
+
+    background-color: #ffffff;
+    color: #2d2f31;
+    /* border: 1px solid #2d2f31; */
+
+    font-size: 17px;
+}
+
+.btn--language:hover {
+    background-color: #f7f9fa;
+}
+
+/* Responsive Design */
+/* @media screen and (max-width: 1100px) {
+
+    .navbar {
+        gap: 14px;
+        padding: 0 18px;
+    }
+
+    .navbar__menu {
+        gap: 12px;
+    }
+
+    .navbar__search {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .navbar__menu {
+        display: none;
+    }
+
+    .navbar__search {
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        min-height: 65px;
+        padding: 10px 15px;
+        flex-wrap: wrap;
+    }
+
+    .navbar__link {
+        display: none;
+    }
+
+    .navbar__logo img {
+        width: 80px;
+    }
+
+    .navbar__search {
+        order: 3;
+        flex-basis: 100%;
+        max-width: 100%;
+        height: 42px;
+    }
+
+    .navbar__actions {
+        gap: 8px;
+    }
+
+    .button {
+        height: 36px;
+        padding: 0 12px;
+        font-size: 12px;
+    }
+
+    .btn--language {
+        width: 36px;
+        padding: 0;
+    }
+
+    .navbar__cart {
+        font-size: 17px;
+    }
+} */
+
+/* categories */
+
+.categories{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid black;
+
+}
+
+.categories p{
+    background-color: violet;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+
+.sale-image img{
+    width: 100%;
+}
+
+.recommended{
+    padding: 10px;
+}
+
+.recommended__container{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 10px;
+
+}
+
+.course__card{
+    width: 250px;
+
+}
+
+.course__card img{
+
+width: 100%;
+height:50%;
+}
+
+
+.topics{
+    padding: 10px;
+
+}
+
+
+
+
+.topics__container{
+    display: flex;
+    margin-top: 10px;
+gap: 10px;
+flex-wrap: wrap;
+
+}
+
+.topics__container p{
+    border: 1px solid grey;
+    padding: 10px;
+    gap: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+
+}
+
